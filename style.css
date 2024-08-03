@@ -14,12 +14,14 @@
 
 }
 
-.btn_one {
+.btn_one i{
     font-size: 28px;
     position: absolute;
     left: 10px;
     line-height: 60px;
     font-weight: 800;
+    transition-property: font-size;
+    transition-duration: 0.5s;
 }
 
 .sidebar_menu {
@@ -48,13 +50,16 @@
     font-weight: 500;
 }
 
-.sidebar_menu .btn_two {
+.sidebar_menu .btn_two i{
     position: absolute;
     font-size: 23px;
     left: 267px;
     line-height: 60px;
     color: grey;
-    opacity: 0;
+    opacity: 0.;
+    cursor: pointer;
+    transition-property: font-size;
+    transition-duration: 0.5s;
 }
 
 .sidebar_menu .menu {
@@ -92,4 +97,17 @@ a {
 
 #check {
     display: none;
+}
+.sidebar_menu .menu li:hover{
+    box-shadow: 0 0 6px white;
+}
+.sidebar_menu .btn_two i:hover{
+    font-size: 28px;
+}
+.btn_one i:hover{
+    font-size: 28px;
+}
+.sidebar_menu .social_media i:hover{
+    opacity: 1;
+    transform: scale(1.1);
 }
